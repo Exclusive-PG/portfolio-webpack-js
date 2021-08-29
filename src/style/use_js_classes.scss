@@ -1,0 +1,43 @@
+///////////////////////////////// JS classes /////////////////////
+
+.fixed{
+    z-index: 900;
+    transition: .3s all;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    position: fixed;
+    top: -100px;
+    animation: fadeStart 1s ease forwards;
+}
+
+@keyframes fadeStart {
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+        visibility: visible;
+    }
+}
+
+.hide{
+    transition: .3s all;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scroll-off{
+    overflow: hidden;
+}
+
+
+
+
+.loader-off{
+    visibility: hidden;
+    opacity: 0;
+}
+////////////////////////  /////////////////////////////////////

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>PortFolio</title>
+  </head>
+  <body>
+    <header class="present smooth_point_1" id="fullscreen">
+      <div class="container-bg-video">
+        <video autoplay muted loop class="video"></video>
+      </div>
+      <div class="mask">
+        <div class="present-text">
+          <h2 data-aos="zoom-in"  >Привет,я Ильченко Дмитрий</h2>
+          <p data-aos="fade-up"  data-aos-delay="180">Front-End Developer</p>
+          <div class="btn-container smooth">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Dmitry Ilchenko</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link pr-4" data-nav="home" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-4" data-nav="about" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-4" data-nav="works" href="#">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-4" data-nav="skills" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-4" data-nav="contact" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Main Content-->
+    <main>
+      <section class="about">
+        <div class="container smooth_point_2">
+          <div class="text__about">
+            <h2 class="h2_about">Обо мне</h2>
+            <p data-aos="fade-up">
+              Я Ильченко Дмитрий.Мне 19 лет. Моя связь с программированием
+              началась с 11 класса,когда я задумался о своей будущей профессии.
+              Я начал искать в Интернете много информации о деятельности
+              программиста и наткнулся на статью по HTML. Вот так и начался мой
+              путь веб-программиста. После освоения данной технологии я не
+              остановился . Следущий был этап CSS ,который бы предавал сайтам
+              красочности.
+            </p>
+            <p data-aos="fade-up" data-aos-delay="150">
+              И вот уже освоив полноценную верстку сайтов нужно было начинать
+              учить настоящий язык программирования - JavaScript. На это у меня
+              ушёл целый 1 курс . Сейчас я учусь на 2 курсе и знаю стек
+              технологий - HTML , CSS , SCSS / SASS , JavaScript , React + Redux
+              , BootStrap , Webpack , GIT , боты для Telegram и Discord . На этом мой интерес к достигнутому
+              не закончен. Каждый день я узнаю что-то новое. Я готов развиваться
+              круглосуточно , потому что программирование стало больше ,чем
+              хобби.
+            </p>
+            <button type="button" class="btn btn-outline-dark" data-aos="fade-up" data-aos-delay="250" id ="download_resume" data-toggle="modal" data-target="#modalWin" >
+              <i class="fas fa-cloud-download-alt"></i> Cкачать резюме
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="works bg-dark">
+        <div class="container smooth_point_3">
+          <div class="description">
+            <h2 class="h2_descr" data-aos="flip-up" >Мои работы</h2>
+            <p class="p_descr" data-aos="fade-up" data-aos-delay="250" >
+              Это не все мои работы , но каждая из них дала мне опыт . Вы можете
+              подробнее ознакомится с ними кликнув по карточкам.
+            </p>
+          </div>
+          <div class="switch__works"></div>
+          <div class="grid  ">
+            <div class="elem">
+              <img
+                class="item_work_1 item"
+                data-work="1"
+                src="./images/item-works-1.jpg"
+                alt="work-1"
+              />
+            </div>
+            <div class="elem">
+              <img
+                class="item_work_2 item"
+                data-work="2"
+                src="./images/item-works-2.jpg"
+                alt="work-1"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills smooth_point_4">
+        <div class="container">
+          <h2 class="title_container" data-aos="fade-down" data-aos-delay="250">Skills</h2>
+          <div class="grid-box-skills">
+            <div class="box" data-aos="fade-down" data-aos-delay="250">
+              <div class="percent-circle">20</div>
+              <svg class="progress_svg" width="120" height="120">
+                <circle
+                  class="progress_circle"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  stroke-width="5"
+                  data-percent = "95"
+                ></circle>
+              </svg>
+              <div class="title_circle">HTML</div>
+            </div>
+            <div class="box" data-aos="fade-down" data-aos-delay="250">
+              <div class="percent-circle">20</div>
+              <svg class="progress_svg" width="120" height="120">
+                <circle
+                  class="progress_circle"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  stroke-width="5"
+                  data-percent = "90"
+                ></circle>
+              </svg>
+              <div class="title_circle">CSS</div>
+            </div>
+            <div class="box" data-aos="fade-down" data-aos-delay="250">
+              <div class="percent-circle">20</div>
+              <svg class="progress_svg" width="120" height="120">
+                <circle
+                  class="progress_circle"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  stroke-width="5"
+                  data-percent = "78"
+                ></circle>
+              </svg>
+              <div class="title_circle">JavaScript</div>
+            </div>
+            <div class="box" data-aos="fade-down" data-aos-delay="350">
+              <div class="percent-circle">20</div>
+              <svg class="progress_svg" width="120" height="120">
+                <circle
+                  class="progress_circle"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  stroke-width="5"
+                  data-percent = "71"
+                ></circle>
+              </svg>
+              <div class="title_circle">React+Redux</div>
+            </div>
+            <div class="box" data-aos="fade-down" data-aos-delay="350">
+              <div class="percent-circle">20</div>
+              <svg class="progress_svg" width="120" height="120">
+                <circle
+                  class="progress_circle"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  stroke-width="5"
+                  data-percent = "80"
+                ></circle>
+              </svg>
+              <div class="title_circle">SCSS</div>
+            </div>
+            <div class="box" data-aos="fade-down" data-aos-delay="350">
+              <div class="percent-circle">20</div>
+              <svg class="progress_svg" width="120" height="120">
+                <circle
+                  class="progress_circle"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  stroke-width="5"
+                  data-percent = "68"
+                ></circle>
+              </svg>
+              <div class="title_circle">Webpack</div>
+            </div>
+            <div class="box" data-aos="fade-down" data-aos-delay="450">
+              <div class="percent-circle">20</div>
+              <svg class="progress_svg" width="120" height="120">
+                <circle
+                  class="progress_circle"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  stroke-width="5"
+                  data-percent = "79"
+                ></circle>
+              </svg>
+              <div class="title_circle">GIT</div>
+            </div>
+            <div class="box" data-aos="fade-down" data-aos-delay="450">
+              <div class="percent-circle">20</div>
+              <svg class="progress_svg" width="120" height="120">
+                <circle
+                  class="progress_circle"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  stroke-width="5"
+                  data-percent = "88"
+                ></circle>
+              </svg>
+              <div class="title_circle">Bootstrap</div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="pop-up hide">
+        <div class="container_pop_up">
+          <div class="inner___wrapper">
+            <div class="img_work"><img class="pop_up__img" alt="" /></div>
+
+            <button
+              class="btn btn-primary toogle_btn"
+              type="button"
+              data-toggle="collapse"
+              data-target="#multiCollapse"
+              aria-expanded="false"
+              aria-controls="multiCollapse"
+            >
+              Читать
+            </button>
+            <div
+              class="description_work collapse multi-collapse"
+              id="multiCollapse"
+            >
+              <div class="card card-body"></div>
+            </div>
+            <button type="button" class="btn btn-dark">
+              <a class="nav-link link_github_pg" href="#">Подробнее</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact smooth_point_5">
+            <div class="container">
+                <h2 class="title_contact" data-aos="fade-up">contact me</h2>
+                <p class="subtitle" data-aos="zoom-out" data-aos-delay="150">Вы можете со мной связаться через GitHub , Telegram , Instagram</p>
+            <div class="icons">
+               <a data-aos="zoom-out" data-aos-delay="250"  href="https://github.com/Exclusive-PG"><i class="fab fa-github fa-5x"></i></a> 
+               <a data-aos="zoom-out" data-aos-delay="350"   href="https://t.me/developerFrontEnd"><i class="fab fa-telegram fa-5x"></i></a> 
+               <a data-aos="zoom-out" data-aos-delay="450"   href="https://www.instagram.com/take_it_easy__w0/?hl=en"> <i class="fab fa-instagram fa-5x"></i></a> 
+              </div>
+            </div>
+      </section> 
+      <section class="loader">
+        <div class="spinner-border text-danger " role="status">
+        </div>
+      </section>
+      
+      <section >
+        <div class="modal fade" id="modalWin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Оповещение</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+              </div>
+              <div class="modal-body">
+                Резюме в данный момент недоступно
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

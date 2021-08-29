@@ -1,0 +1,62 @@
+$mainColor: #ff0000;
+
+.contact {
+  min-height: 100vh;
+  background-color: rgba($color: rgb(52, 58, 64), $alpha: 0.7);
+
+  .title_contact {
+    text-transform: uppercase;
+  }
+  .container {
+    padding: 300px 150px;
+    text-align: center;
+
+    .fa-github,
+    .fa-instagram {
+      color: $mainColor;
+    }
+    .fa-telegram {
+      color: $mainColor;
+    }
+  }
+}
+
+.title_contact {
+  margin-bottom: 50px;
+}
+.icons > a {
+  margin: 35px;
+  transition-delay: 0 !important;
+  transition: .3s !important;
+}
+.icons > a:hover {
+  cursor: pointer;
+  transform: scale(1.2) translateY(-15px) !important;
+  color: #fff;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.subtitle {
+  color: #fff;
+  margin-bottom: 150px;
+  font-size: 18px;
+  padding: 0 100px;
+}
+
+@media (max-width: 790px) {
+  .subtitle {
+    padding: 0;
+  }
+}
+
+@media (max-width: 610px) {
+  .contact {
+    .container {
+      padding: 300px 0;
+    }
+  }
+}
